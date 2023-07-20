@@ -92,6 +92,15 @@ html {
     
     }
 
+    #nav-close {
+
+        font-size: 5rem;
+        cursor: pointer;
+        color: $black;
+        display: none;
+
+    }
+
     .icons a,
     .icons div {
 
@@ -106,7 +115,7 @@ html {
 
     }
 
-    menu-btn {
+    #menu-button {
 
         display: none;
 
@@ -115,4 +124,81 @@ html {
 }
  
 
+//media queries
 
+@media (max-width: 1440px){
+
+    .header {
+
+        padding: 2rem;
+
+    }
+
+}
+
+@media (max-width: 1061px){
+
+    html{
+
+        font-size: 55%;
+
+    }
+
+}
+
+@media (max-width: 954px){
+
+
+    .header {
+
+        #menu-button {
+
+            display: inline-block;
+    
+        }
+    }
+
+    html{
+
+        font-size: 50%;
+
+    }
+
+    .nav-bar {
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: $white;
+        z-index: 10000;
+        width: 35rem;
+        height: 100%;
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, .8);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+
+        a{
+
+            margin: 1rem 0;
+            font-size: 3rem;
+        }
+
+        #nav-close{
+
+            display: block;
+            position: absolute;
+            top: 1rem; right: 2rem;
+        }
+
+    }
+
+
+}
+
+@media (max-width: 450px){
+
+
+
+}

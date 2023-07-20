@@ -57,6 +57,12 @@ html::-webkit-scrollbar-thumb {
 .header .nav-bar a:hover {
   color: rgb(242, 206, 0);
 }
+.header #nav-close {
+  font-size: 5rem;
+  cursor: pointer;
+  color: #10221b;
+  display: none;
+}
 .header .icons a,
 .header .icons div {
   font-size: 1.7rem;
@@ -67,6 +73,52 @@ html::-webkit-scrollbar-thumb {
 .header .icons a:hover,
 .header .icons div:hover {
   color: rgb(242, 206, 0);
+}
+.header #menu-button {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .header {
+    padding: 2rem;
+  }
+}
+@media (max-width: 1061px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 954px) {
+  .header #menu-button {
+    display: inline-block;
+  }
+  html {
+    font-size: 50%;
+  }
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 10000;
+    width: 35rem;
+    height: 100%;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-bar a {
+    margin: 1rem 0;
+    font-size: 3rem;
+  }
+  .nav-bar #nav-close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
