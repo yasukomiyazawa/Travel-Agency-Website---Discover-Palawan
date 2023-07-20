@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;1,100;1,300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    color: black;
+}
+
+$blue: rgb(7, 81, 165);
+$gold: rgb(242, 206, 0);
+$black: #10221b;
+$white: #fff;
+$light-bg: #eee;
+$border: .2rem solid $black;
+$box-shadow: 0 .5rem 1rem regb(0,0,0,.1);
+
+@mixin grid($val){
+
+    display: grid;
+    $grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap:1.5rem;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+
+    &::-webkit-scrollbar{
+        width:1rem;
+    }
+
+    &::-webkit-scrollbar-track{
+
+        background: $white;
+
+    }
+
+    &::-webkit-scrollbar-thumb{
+
+        background: $black;
+
+    }
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 9%;
+    z-index: 1000;
+    align-items: center;
+
+    .logo {
+
+        margin-right: auto;
+        font-size: 3rem;
+        color: $black;
+        font-weight: bolder;
+    
+        i {
+    
+            padding-right: 10px;
+            color: $blue;
+    
+        }
+    
+    }
+    
+    .nav-bar a {
+    
+        padding: 0 20px;
+        font-size: 1.7rem;
+    
+        &:hover {
+    
+            color: $gold;
+    
+        }
+    
+    }
+
+    .icons a,
+    .icons div {
+
+        font-size: 1.7rem;
+        margin-left: 2rem;
+        cursor: pointer;
+        color: $black;
+
+        &:hover {
+            color: $gold;
+        }
+
+    }
+
+    menu-btn {
+
+        display: none;
+
+    }
+    
+}
+ 
+
+

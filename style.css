@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;1,100;1,300&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  color: black;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+html::-webkit-scrollbar-thumb {
+  background: #10221b;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 9%;
+  z-index: 1000;
+  align-items: center;
+}
+.header .logo {
+  margin-right: auto;
+  font-size: 3rem;
+  color: #10221b;
+  font-weight: bolder;
+}
+.header .logo i {
+  padding-right: 10px;
+  color: rgb(7, 81, 165);
+}
+.header .nav-bar a {
+  padding: 0 20px;
+  font-size: 1.7rem;
+}
+.header .nav-bar a:hover {
+  color: rgb(242, 206, 0);
+}
+.header .icons a,
+.header .icons div {
+  font-size: 1.7rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: #10221b;
+}
+.header .icons a:hover,
+.header .icons div:hover {
+  color: rgb(242, 206, 0);
+}
+
+/*# sourceMappingURL=style.css.map */
