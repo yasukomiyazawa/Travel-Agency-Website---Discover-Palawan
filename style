@@ -92,10 +92,10 @@ html::-webkit-scrollbar-thumb {
   .header #menu-button {
     display: inline-block;
   }
-  .nav-bar {
+  .header .nav-bar a {
     position: fixed;
     top: 0;
-    left: -110%;
+    left: 100px;
     background: #fff;
     z-index: 1000;
     width: 35rem;
@@ -105,20 +105,16 @@ html::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
   }
-  .nav-bar a {
+  .header .nav-bar a a {
     margin: 1rem 0;
     font-size: 3rem;
   }
-  .nav-bar #nav-close {
+  .header .nav-bar a #nav-close {
     display: block;
     position: absolute;
     top: 1rem;
     right: 2rem;
   }
-  .active {
-    left: 0;
-    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
-  }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.map */
