@@ -173,31 +173,29 @@ html {
         align-items: center;
         justify-content: center;
 
-        a {
+            a {
 
-            margin: 1rem 0;
-            font-size: 3rem;
-    
-        }    
-    
-        #nav-close {
-     
-            display: block;
-            position: absolute;
-            top: 1rem; right: 2rem;  
-            
-        }
+        margin: 1rem 0;
+        font-size: 3rem;
+
+    }    
+
+    #nav-close {
+ 
+        display: block;
+        position: absolute;
+        top: 1rem; right: 2rem;  
+        
+    }
 
     }
 
-    .active {
+    &.active {
 
         left: 0;
         box-shadow: 0 0 0 100vw rgba(0, 0, 0, .8);
 
     }
-
-
 
 
 }
