@@ -28,6 +28,10 @@ html::-webkit-scrollbar-thumb {
   background: #10221b;
 }
 
+section {
+  padding: 5rem 9%;
+}
+
 .header {
   display: flex;
   position: fixed;
@@ -48,11 +52,12 @@ html::-webkit-scrollbar-thumb {
 }
 .header .logo i {
   padding-right: 10px;
-  color: rgb(7, 81, 165);
+  color: orange;
 }
 .header .nav-bar a {
   padding: 0 20px;
-  font-size: 1.7rem;
+  font-size: 2rem;
+  color: #10221b;
 }
 .header .nav-bar a:hover {
   color: rgb(242, 206, 0);
@@ -78,9 +83,123 @@ html::-webkit-scrollbar-thumb {
   display: none;
 }
 
+.search-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transform: translateY(-110%);
+}
+.search-form.active {
+  transform: translateY(0%);
+}
+.search-form #close-search {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 6rem;
+}
+.search-form #close-search:hover {
+  color: rgb(242, 206, 0);
+}
+.search-form form {
+  width: 70rem;
+  margin: 0 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid #fff;
+  display: flex;
+  align-items: center;
+}
+.search-form form input {
+  width: 100%;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+  padding-right: 2rem;
+}
+.search-form form input::placeholder {
+  color: #aaa;
+}
+.search-form form label {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #fff;
+}
+.search-form form label:hover {
+  color: gold;
+}
+
+.home {
+  padding: 0;
+}
+.home .box {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content: flex-start;
+  padding: 2rem 9%;
+}
+.home .box.second {
+  justify-content: flex-end;
+}
+.home .box .content {
+  width: 50rem;
+}
+.home .box .content span {
+  font-size: 4.5rem;
+  color: gold;
+}
+.home .box .content h3 {
+  font-size: 6rem;
+  color: rgb(151, 30, 30);
+  padding-top: 0.5rem;
+  text-transform: uppercase;
+}
+.home .box .content p {
+  line-height: 2;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  font-weight: 900;
+}
+.home .box .content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 4rem;
+}
+.home .box .content .btn:hover {
+  background: #10221b;
+  color: #fff;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 3rem;
+  color: #10221b;
+}
+
 @media (max-width: 1440px) {
   .header {
     padding: 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
   }
 }
 @media (max-width: 1061px) {
@@ -118,6 +237,30 @@ html::-webkit-scrollbar-thumb {
   .active {
     left: 0;
     box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  }
+  .home .box {
+    padding: 2rem;
+    justify-content: center;
+    background-position: left !important;
+  }
+  .home .box.second {
+    justify-content: center;
+    background-position: left !important;
+  }
+  .home .box .content {
+    text-align: center;
+  }
+  .home .box .content span {
+    font-size: 3rem;
+  }
+  .home .box .content h3 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 700px) {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
   }
 }
 

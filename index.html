@@ -8,6 +8,8 @@
     <!-- font awesom cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
     <!-- custom css file link -->
     <link rel="stylesheet" href="style.css" >
 
@@ -33,18 +35,108 @@
         <div class="icons">
             <div id="menu-button" class="fas fa-bars"></div>
             <a href="#" class="fas fa-shopping-cart"></a>
-            <div id="search-btn" class="fas fa-search"></div>
+            <div id="search-button" class="fas fa-search"></div>
         </div>
     
     </header>
 
     <!-- header seaction ends -->
 
+    <!-- search form -->
+
+    <div class="search-form">
+
+        <div id="close-search" class="fas fa-times"></div>
+
+        <form action="">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+
+                   <div class="box" style="background: url(images/home-bg-1.jpg) no-repeat">
+
+                        <div class="content">
+                            <span>Explore the </span>
+                            <h3>Beautiful Islands of the Philippines</h3>
+                             <p>
+                                 Discover paradise on Earth in the Philippines, where pristine beaches, 
+                                 azure waters, and tropical wonders beckon with unmatched beauty.
+                            </p>
+                            <a href="#" class="btn">get started</a>
+                        </div>
+                        
+                   </div> 
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="box second" style="background: url(images/home-bg-2.jpg) no-repeat">
+
+                        <div class="content">
+                            <span>Embark on </span>
+                            <h3>Unforgettable Island Hopping</h3>
+                             <p>
+                                Unleash your wanderlust and hop from one paradise to another, 
+                                discovering hidden coves, secret lagoons, and enchanting marine life along the way.
+                            </p>
+                            <a href="#" class="btn">get started</a>
+                        </div>
+
+                    </div> 
+ 
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="box third" style="background: url(images/home-bg-3.jpg) no-repeat">
+                         
+                        <div class="content">
+                            <span>Experience </span>
+                            <h3>Awe-Inspiring Sunsets</h3>
+                             <p>
+                                Immerse yourself in the breathtaking spectacle of vibrant sunsets 
+                                that paint the Philippine skies with a kaleidoscope of colors.
+                            </p>
+                            <a href="#" class="btn">get started</a>
+                        </div>
+
+
+                    </div> 
+ 
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- home section ends -->
 
 
 
 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <!-- custom JS file link -->
     <script src="script.js"></script>

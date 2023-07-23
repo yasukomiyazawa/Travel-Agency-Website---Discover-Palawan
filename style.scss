@@ -12,10 +12,11 @@
     color: black;
 }
 
-$blue: rgb(7, 81, 165);
+$blue: rgb(12, 12, 241);
 $gold: rgb(242, 206, 0);
 $black: #10221b;
 $white: #fff;
+$green: rgb(0, 100, 0);
 $light-bg: #eee;
 $border: .2rem solid $black;
 $box-shadow: 0 .5rem 1rem regb(0,0,0,.1);
@@ -51,6 +52,12 @@ html {
     }
 }
 
+section {
+
+    padding: 5rem 9%;
+
+}
+
 .header {
     display: flex;
     position: fixed;
@@ -73,7 +80,7 @@ html {
         i {
     
             padding-right: 10px;
-            color: $blue;
+            color: orange;
     
         }
     
@@ -82,7 +89,8 @@ html {
     .nav-bar a {
     
         padding: 0 20px;
-        font-size: 1.7rem;
+        font-size: 2rem;
+        color: $black;
     
         &:hover {
     
@@ -122,6 +130,181 @@ html {
     }
     
 }
+
+
+.search-form{
+
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    transform: translateY(-110%);
+
+    &.active{
+
+        transform: translateY(0%);
+
+    }
+
+
+    #close-search{
+
+        position: absolute;
+        top: 2rem; right: 2.5rem;
+        cursor: pointer;
+        color: $white;
+        font-size: 6rem;
+
+        &:hover {
+
+            color: $gold;
+
+        }
+
+    }
+
+    form{
+
+        width: 70rem;
+        margin: 0 2rem;
+        padding-bottom: 2rem;
+        border-bottom: .2rem solid $white;
+        display: flex;
+        align-items: center;
+
+        input {
+
+            width: 100%;
+            font-size: 2rem;
+            color: $white;
+            text-transform: none;
+            background: none;
+            padding-right: 2rem;
+
+            &::placeholder{
+                color: #aaa;
+            }
+        
+        }
+
+        label{
+
+            font-size:3rem;
+            cursor: pointer;
+            color: $white;
+
+            &:hover{
+
+                color: gold;
+
+            }
+
+        }
+
+    }
+
+}
+
+.home{
+
+    padding: 0;
+
+    .box{
+
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-size: cover !important;
+        background-position: center !important;
+        justify-content: flex-start;
+        padding: 2rem 9%;
+
+        &.second {
+
+            justify-content: flex-end;
+
+        }
+
+        .content {
+
+            width: 50rem;
+            
+            span {
+
+                font-size: 4.5rem;
+                color: gold;
+
+            }
+
+            h3 {
+
+                font-size: 6rem;
+                color: rgb(151, 30, 30);
+                padding-top: .5rem;
+                text-transform: uppercase;
+
+            }
+
+            p {
+
+                line-height: 2;
+                color: $white;
+                font-size: 1.8rem;
+                padding: 1rem 0;
+                font-weight:900;
+
+            }
+
+            .btn {
+
+                margin-top: 1rem;
+                display: inline-block;
+                border: $border;
+                color: $black;
+                cursor: pointer;
+                background: none;
+                font-size: 1.7rem;
+                padding: 1rem 4rem;
+            
+                &:hover {
+            
+                    background: $black;
+                    color: $white;
+            
+                }
+            
+            }
+
+
+        }
+
+    }
+
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+
+    font-size: 3rem;
+    color: $black;
+
+}
+
+
+
+
+
+
+
+
+
+
  
 
 //media queries
@@ -133,6 +316,13 @@ html {
         padding: 2rem;
 
     }
+
+    section{
+
+        padding: 3rem 2rem;
+
+    }
+
 
 }
 
@@ -190,18 +380,55 @@ html {
 
     }
 
-    &.active {
+    .active {
 
         left: 0;
         box-shadow: 0 0 0 100vw rgba(0, 0, 0, .8);
 
     }
 
+    .home .box {
+        padding: 2rem;
+        justify-content: center;
+        background-position: left !important;
+
+        &.second {
+
+            justify-content: center;
+            background-position: left !important;
+
+        }
+
+        .content {
+
+            text-align: center;
+
+            span {
+
+                font-size: 3rem;
+
+            }
+
+            h3{
+
+                font-size: 4rem;
+
+            }
+
+        }
+
+    }
+
 
 }
 
-@media (max-width: 450px){
+@media (max-width: 700px){
 
-    
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+
+        display: none;
+
+    }
 
 }
