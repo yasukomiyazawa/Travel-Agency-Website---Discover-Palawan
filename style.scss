@@ -74,7 +74,7 @@ section {
 
         margin-right: auto;
         font-size: 3rem;
-        color: $black;
+        color: $white;
         font-weight: bolder;
     
         i {
@@ -90,7 +90,7 @@ section {
     
         padding: 0 20px;
         font-size: 2rem;
-        color: $black;
+        color: $white;
     
         &:hover {
     
@@ -115,7 +115,7 @@ section {
         font-size: 1.7rem;
         margin-left: 2rem;
         cursor: pointer;
-        color: $black;
+        color: $white;
 
         &:hover {
             color: $gold;
@@ -227,6 +227,19 @@ section {
         &.second {
 
             justify-content: flex-end;
+            
+            p{
+
+                color: $white !important;
+
+            }
+
+            .btn {
+
+                border: .2rem solid $white !important;
+                color:$white !important;
+
+            }
 
         }
 
@@ -253,7 +266,7 @@ section {
             p {
 
                 line-height: 2;
-                color: $white;
+                color: $black;
                 font-size: 1.8rem;
                 padding: 1rem 0;
                 font-weight:900;
@@ -395,7 +408,7 @@ section {
         &.second {
 
             justify-content: center;
-            background-position: left !important;
+            background-position: center !important;
 
         }
 

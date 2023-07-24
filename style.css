@@ -47,7 +47,7 @@ section {
 .header .logo {
   margin-right: auto;
   font-size: 3rem;
-  color: #10221b;
+  color: #fff;
   font-weight: bolder;
 }
 .header .logo i {
@@ -57,7 +57,7 @@ section {
 .header .nav-bar a {
   padding: 0 20px;
   font-size: 2rem;
-  color: #10221b;
+  color: #fff;
 }
 .header .nav-bar a:hover {
   color: rgb(242, 206, 0);
@@ -73,7 +73,7 @@ section {
   font-size: 1.7rem;
   margin-left: 2rem;
   cursor: pointer;
-  color: #10221b;
+  color: #fff;
 }
 .header .icons a:hover,
 .header .icons div:hover {
@@ -153,6 +153,13 @@ section {
 .home .box.second {
   justify-content: flex-end;
 }
+.home .box.second p {
+  color: #fff !important;
+}
+.home .box.second .btn {
+  border: 0.2rem solid #fff !important;
+  color: #fff !important;
+}
 .home .box .content {
   width: 50rem;
 }
@@ -168,7 +175,7 @@ section {
 }
 .home .box .content p {
   line-height: 2;
-  color: #fff;
+  color: #10221b;
   font-size: 1.8rem;
   padding: 1rem 0;
   font-weight: 900;
@@ -245,7 +252,7 @@ section {
   }
   .home .box.second {
     justify-content: center;
-    background-position: left !important;
+    background-position: center !important;
   }
   .home .box .content {
     text-align: center;
