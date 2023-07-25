@@ -30,7 +30,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.onscroll = () => {
 
-        navbar.classList.remove("active")
+      navbar.classList.remove("active")
+
+      if(window.scrollY > 0){
+
+        document.querySelector('.header').classList.add('activeScroll');
+
+      } else {
+
+        document.querySelector('.header').classList.remove('activeScroll');
+
+      }
 
     }
 

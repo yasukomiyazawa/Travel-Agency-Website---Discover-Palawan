@@ -32,6 +32,13 @@ section {
   padding: 5rem 9%;
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  color: #10221b;
+}
+
 .header {
   display: flex;
   position: fixed;
@@ -43,6 +50,10 @@ section {
   padding: 2rem 9%;
   z-index: 1000;
   align-items: center;
+}
+.header .activeScroll {
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem regb(0, 0, 0, 0.1);
 }
 .header .logo {
   margin-right: auto;
@@ -191,14 +202,54 @@ section {
   padding: 1rem 4rem;
 }
 .home .box .content .btn:hover {
-  background: #10221b;
-  color: #fff;
+  background: rgb(151, 30, 30);
+  color: #fff !important;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 3rem;
   color: #10221b;
+}
+
+.category .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1.5rem;
+}
+.category .box-container .box {
+  text-align: center;
+  padding: 2rem;
+}
+.category .box-container .box img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.category .box-container .box h3 {
+  font-size: 2rem;
+  color: rgb(0, 0, 77);
+}
+.category .box-container .box p {
+  font-size: 1.4rem;
+  color: #10221b;
+  padding: 1rem 0;
+  line-height: 2;
+}
+.category .box-container .box button {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.4rem;
+  padding: 1rem 3rem;
+}
+.category .box-container .box button:hover {
+  background: rgb(151, 30, 30);
+  color: #fff;
 }
 
 @media (max-width: 1440px) {
@@ -231,15 +282,20 @@ section {
     align-items: center;
     justify-content: center;
   }
-  .nav-bar a {
-    margin: 1rem 0;
-    font-size: 3rem;
-  }
   .nav-bar #nav-close {
     display: block;
     position: absolute;
     top: 1rem;
     right: 2rem;
+    color: #10221b !important;
+  }
+  .nav-bar a {
+    margin: 1rem 0;
+    font-size: 3rem;
+    color: #10221b !important;
+  }
+  .nav-bar a:hover {
+    color: rgb(242, 206, 0) !important;
   }
   .active {
     left: 0;
