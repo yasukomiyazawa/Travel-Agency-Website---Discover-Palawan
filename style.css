@@ -50,6 +50,7 @@ section {
   padding: 2rem 9%;
   z-index: 1000;
   align-items: center;
+  background-color: #fff;
 }
 .header .activeScroll {
   background: #fff;
@@ -57,8 +58,8 @@ section {
 }
 .header .logo {
   margin-right: auto;
-  font-size: 2rem;
-  color: #fff;
+  font-size: 3rem;
+  color: #10221b;
   font-weight: bolder;
 }
 .header .logo i {
@@ -68,7 +69,7 @@ section {
 .header .nav-bar a {
   padding: 0 20px;
   font-size: 2rem;
-  color: #fff;
+  color: #10221b;
 }
 .header .nav-bar a:hover {
   color: rgb(242, 206, 0);
@@ -84,7 +85,7 @@ section {
   font-size: 1.7rem;
   margin-left: 2rem;
   cursor: pointer;
-  color: #fff;
+  color: #10221b;
 }
 .header .icons a:hover,
 .header .icons div:hover {

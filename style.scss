@@ -78,6 +78,7 @@ section {
     padding: 2rem 9%;
     z-index: 1000;
     align-items: center;
+    background-color: $white;
 
     .activeScroll {
         background: $white;
@@ -88,7 +89,7 @@ section {
 
         margin-right: auto;
         font-size: 2rem;
-        color: $white;
+        color: $black;
         font-weight: bolder;
     
         i {
@@ -104,7 +105,7 @@ section {
     
         padding: 0 20px;
         font-size: 2rem;
-        color: $white;
+        color: $black;
     
         &:hover {
     
@@ -129,7 +130,7 @@ section {
         font-size: 1.7rem;
         margin-left: 2rem;
         cursor: pointer;
-        color: $white;
+        color: $black;
 
         &:hover {
             color: $gold;
