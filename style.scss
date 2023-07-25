@@ -87,7 +87,7 @@ section {
     .logo {
 
         margin-right: auto;
-        font-size: 3rem;
+        font-size: 2rem;
         color: $white;
         font-weight: bolder;
     
@@ -328,7 +328,7 @@ section {
     .box-container {
 
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
         gap: 1.5rem;
 
         .box{
