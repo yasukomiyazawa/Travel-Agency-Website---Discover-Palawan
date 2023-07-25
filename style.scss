@@ -327,12 +327,8 @@ section {
 
     .box-container {
 
-        // display: grid;
-        // grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
-        // gap: 1.5rem;
-
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         gap: 1.5rem;
 
         .box{
