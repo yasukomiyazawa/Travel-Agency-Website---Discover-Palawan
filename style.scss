@@ -313,7 +313,6 @@ section {
 
 }
 
-
 .swiper-button-next::after,
 .swiper-button-prev::after{
 
@@ -321,7 +320,6 @@ section {
     color: $black;
 
 }
-
 
 .category {
 
@@ -388,8 +386,70 @@ section {
 
 }
 
+.about {
+
+    background: $light-bg;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 
 
+    .image{
+
+        flex: 1 1 42rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+
+        img {
+            width: 100%;
+            box-shadow: 4rem 4rem rgba(0, 0, 0, .1) ;
+
+        }
+
+    }
+}
+
+.content {
+
+    flex: 1 1 42rem;
+
+    h3 {
+
+        font-size: 3rem;
+        color: $blue;
+
+    }
+
+    p{
+
+        font-size: 1.5rem;
+        color: $black;
+        padding: 1rem 0;
+
+    }
+
+    button {
+
+        margin-top: 1rem;
+        display: inline-block;
+        border: $border;
+        color: $black;
+        cursor: pointer;
+        background: none;
+        font-size: 1.4rem;
+        padding: 1rem 3rem;
+    
+        &:hover {
+    
+            background: $red;
+            color: $white;
+    
+        }
+    
+    }
+
+}
 
 
 

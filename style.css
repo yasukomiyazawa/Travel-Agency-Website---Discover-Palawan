@@ -252,6 +252,50 @@ section {
   color: #fff;
 }
 
+.about {
+  background: #eee;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.about .image {
+  flex: 1 1 42rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.about .image img {
+  width: 100%;
+  box-shadow: 4rem 4rem rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  flex: 1 1 42rem;
+}
+.content h3 {
+  font-size: 3rem;
+  color: rgb(0, 0, 77);
+}
+.content p {
+  font-size: 1.5rem;
+  color: #10221b;
+  padding: 1rem 0;
+}
+.content button {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.4rem;
+  padding: 1rem 3rem;
+}
+.content button:hover {
+  background: rgb(151, 30, 30);
+  color: #fff;
+}
+
 @media (max-width: 1440px) {
   .header {
     padding: 2rem;
