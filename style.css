@@ -269,19 +269,19 @@ section {
   box-shadow: 4rem 4rem rgba(0, 0, 0, 0.1);
 }
 
-.content {
+.about-content {
   flex: 1 1 42rem;
 }
-.content h3 {
+.about-content h3 {
   font-size: 3rem;
   color: rgb(0, 0, 77);
 }
-.content p {
+.about-content p {
   font-size: 1.5rem;
   color: #10221b;
   padding: 1rem 0;
 }
-.content button {
+.about-content button {
   margin-top: 1rem;
   display: inline-block;
   border: 0.2rem solid #10221b;
@@ -291,7 +291,7 @@ section {
   font-size: 1.4rem;
   padding: 1rem 3rem;
 }
-.content button:hover {
+.about-content button:hover {
   background: rgb(151, 30, 30);
   color: #fff;
 }
