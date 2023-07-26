@@ -68,7 +68,7 @@ section {
 }
 .header .nav-bar a {
   padding: 0 20px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #10221b;
 }
 .header .nav-bar a:hover {
@@ -370,9 +370,10 @@ section {
   .swiper-button-prev::after {
     display: none;
   }
-  .logo {
-    font-size: 1.5rem !important;
+  .header .logo {
+    font-size: 1rem !important;
+    color: yellow;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */

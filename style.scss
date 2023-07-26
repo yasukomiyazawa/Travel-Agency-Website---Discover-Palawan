@@ -104,7 +104,7 @@ section {
     .nav-bar a {
     
         padding: 0 20px;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: $black;
     
         &:hover {
@@ -127,7 +127,7 @@ section {
     .icons a,
     .icons div {
 
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         margin-left: 2rem;
         cursor: pointer;
         color: $black;
@@ -461,12 +461,6 @@ section {
 
 @media (max-width: 1440px){
 
-    .header {
-
-        padding: 2rem;
-
-    }
-
     section{
 
         padding: 3rem 2rem;
@@ -490,6 +484,12 @@ section {
 
 
     .header {
+
+        .icons {
+
+            right: 2rem;
+
+        }
 
         #menu-button {
 
@@ -535,8 +535,6 @@ section {
         }
 
     }    
-
-
 
     .active {
 
@@ -585,6 +583,12 @@ section {
     .swiper-button-prev::after{
 
         display: none;
+
+    }
+
+    .logo{
+
+        font-size: 1.5rem !important;
 
     }
 
