@@ -68,7 +68,7 @@ section {
 }
 .header .nav-bar a {
   padding: 0 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #10221b;
 }
 .header .nav-bar a:hover {
@@ -281,6 +281,7 @@ section {
   font-size: 1.5rem;
   color: #10221b;
   padding: 1rem 0;
+  line-height: 2;
 }
 .about-content button {
   margin-top: 1rem;
@@ -297,6 +298,62 @@ section {
   color: #fff;
 }
 
+.shop .slide {
+  width: 35rem;
+  border: 0.2rem solid #10221b;
+}
+.shop .slide .image {
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+  width: 100%;
+}
+.shop .slide .image img {
+  padding: 3rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.shop .slide .hidden-icons {
+  display: none;
+}
+.shop .slide .image-container:hover .hidden-icons {
+  opacity: 1;
+  transform: translateY(0);
+}
+.shop .slide a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  color: #10221b;
+  background-color: #eee;
+  margin: 0 0.2rem;
+  border: 0.2rem solid #10221b;
+}
+.shop .slide a:hover {
+  background-color: rgb(0, 0, 77);
+  color: #fff;
+}
+.shop .slide .content {
+  padding: 1rem 0;
+  text-align: center;
+}
+.shop .slide .content h3 {
+  font-size: 2rem;
+  color: #10221b;
+}
+.shop .slide .content .price {
+  padding: 1rem 0;
+  padding-top: 0.5rem;
+  font-size: 2.5rem;
+  color: rgb(151, 30, 30);
+}
+.shop .slide .content .stars i {
+  font-size: 1.7rem;
+  color: #10221b;
+}
+
 @media (max-width: 1440px) {
   section {
     padding: 3rem 2rem;
@@ -305,6 +362,7 @@ section {
 @media (max-width: 1061px) {
   html {
     font-size: 55%;
+    scroll-padding-top: 7rem;
   }
 }
 @media (max-width: 954px) {
@@ -370,9 +428,8 @@ section {
   .swiper-button-prev::after {
     display: none;
   }
-  .header .logo {
-    font-size: 1rem !important;
-    color: yellow;
+  .logo {
+    font-size: 1.5rem !important;
   }
 }
 

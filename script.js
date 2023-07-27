@@ -44,6 +44,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+    // let imageContainers = document.querySelectorAll(".image-container");
+
+    // imageContainers.forEach((container) => {
+
+    //   let image = container.querySelector(".image");
+    //   let hiddenIcons = container.querySelector(".hidden-icons")
+
+    //   image.addEventListener("mouseenter", ()=> {
+
+    //     hiddenIcons.classList.remove("hidden-icons")
+
+    //   })
+
+    //   container.addEventListener("mouseleave", () => {
+
+    //     hiddenIcons.classList.add("hidden-icons")
+
+    //   })
+
+    // })
+
+
     var swiper = new Swiper(".home-slider", {
         loop: true,
         grabCursor: true,
@@ -52,6 +74,30 @@ document.addEventListener('DOMContentLoaded', () => {
           prevEl: ".swiper-button-prev",
         },
     });
+
+    var swiper = new Swiper(".product-slider", {
+      loop: true,
+      grabCursor: true,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      },
+  });
 });
 
 
