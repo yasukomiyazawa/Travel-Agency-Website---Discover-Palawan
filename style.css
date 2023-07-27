@@ -364,6 +364,75 @@ section {
   color: #10221b;
 }
 
+.packages {
+  background: #eee;
+}
+.packages .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+.packages .box-container .box {
+  text-align: center;
+  background: #fff;
+  border: 0.2rem solid #10221b;
+  box-shadow: 0 0.5rem 1rem regb(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.packages .box-container .box:hover {
+  background: rgb(0, 0, 77);
+}
+.packages .box-container .box:hover .content > * {
+  color: #fff;
+}
+.packages .box-container .box:hover .btn {
+  border: 0.2rem solid #fff;
+}
+.packages .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  padding: 2rem;
+  padding-bottom: 0;
+  border-radius: 0.5rem;
+}
+.packages .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.packages .box-container .box .content {
+  padding: 2rem;
+}
+.packages .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #10221b;
+}
+.packages .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #10221b;
+  padding: 1rem 0;
+  line-height: 2;
+}
+.packages .box-container .box .content .price {
+  font-size: 2rem;
+  color: rgb(151, 30, 30);
+}
+.packages .box-container .box .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 4rem;
+}
+.packages .box-container .box .btn:hover {
+  background: rgb(151, 30, 30);
+  color: #fff !important;
+}
+
 @media (max-width: 1440px) {
   section {
     padding: 3rem 2rem;
