@@ -429,6 +429,69 @@ section {
   padding: 1rem 4rem;
 }
 .packages .box-container .box .btn:hover {
+  background: rgb(242, 206, 0);
+  color: #fff !important;
+}
+
+.services {
+  background: #eee;
+}
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 1.5rem;
+}
+.services .box-container .box {
+  text-align: center;
+  padding: 2rem;
+  border: 0.2rem solid #10221b;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+.services .box-container .box:hover {
+  background: rgb(151, 30, 30);
+}
+.services .box-container .box:hover img {
+  filter: invert(1);
+}
+.services .box-container .box:hover h3 {
+  color: rgb(242, 206, 0);
+}
+.services .box-container .box:hover p {
+  color: #fff;
+}
+.services .box-container .box:hover .btn {
+  border-color: #fff;
+  color: #fff;
+}
+.services .box-container .box:hover .btn:hover {
+  background: rgb(0, 0, 77);
+}
+.services .box-container .box img {
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+.services .box-container .box h3 {
+  font-size: 2rem;
+  color: rgb(0, 0, 77);
+}
+.services .box-container .box p {
+  font-size: 1.5rem;
+  color: #10221b;
+  padding: 1rem 0;
+  line-height: 2;
+}
+.services .box-container .box .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 4rem;
+}
+.services .box-container .box .btn:hover {
   background: rgb(151, 30, 30);
   color: #fff !important;
 }
