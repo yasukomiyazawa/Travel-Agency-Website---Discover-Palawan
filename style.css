@@ -295,7 +295,7 @@ section {
 }
 .about-content button:hover {
   background: rgb(151, 30, 30);
-  color: #fff;
+  color: #fff !important;
 }
 
 .shop .slide {
