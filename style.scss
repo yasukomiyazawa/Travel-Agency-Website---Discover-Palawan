@@ -781,10 +781,167 @@ section {
 }
 
  
+.reviews {
+
+    .slide {
+
+        .text {
+
+            padding: 2rem;
+            font-size: 1.6rem;
+            font-style: italic;
+            background: $light-bg;
+            border-radius: .5rem;
+            color: $black;
+            line-height: 2;
+            position: relative;
+            z-index: 0;
+            margin: 3rem 0;
+
+            &::before {
+
+                content: "";
+                position: absolute;
+                bottom: -1.5rem; left: .7rem;
+                height: 3rem;
+                width: 3rem;
+                background-color: $light-bg;
+                transform: rotate(45deg);
+            }
+
+        }
+
+        .user {
+
+            display: flex;
+            align-items: center;
+            gap: 1rem;
 
 
 
+            .review-picture {
 
+                border: $border;
+                height: 5rem;
+                width: 5rem;
+                border-radius: 50%;
+                padding: 2rem;
+                display: inline-block;
+                background: $red;
+            
+            }
+
+            h3 {
+
+                font-size: 2rem;
+                color: $blue;
+
+            }
+
+            .stars-review i {
+
+                color: $gold;
+                font-size: 1.5rem;
+
+            }
+            
+
+        }
+
+
+
+    }
+
+}
+
+
+.blogs {
+
+    .slide {
+
+        text-align: center;
+        padding: 2rem;
+
+        img {
+
+            height: 25rem;
+            width: 100%;
+            object-fit: cover;
+            border-radius: .5rem;
+
+        }
+
+        .icons {
+
+            background: $black;
+            border-radius: .5rem;
+            padding: 1rem;
+            position: relative;
+            top: -2rem;
+            display: inline-block;
+            
+            .date-writer {
+
+                font-size: 1.4rem;
+                color: $white;
+                margin: 0 1rem;
+
+
+                &:hover {
+
+                    color: $gold;
+
+                }
+
+                i {
+                    padding-right: .5rem;
+                    color: $gold;
+    
+                }
+
+            }
+
+        }
+
+        .btn {
+
+            margin-top: 1rem;
+            display: inline-block;
+            border: $border;
+            color: $black;
+            cursor: pointer;
+            background: none;
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+        
+            &:hover {
+        
+                background: $red;
+                color: $white !important;
+        
+            }
+        
+        }
+
+        h3 {
+
+            font-size: 2rem;
+            color: $black;
+
+        }
+
+        p {
+
+            font-size: 1.4rem;
+            padding: 1rem 0;
+            line-height: 2;
+            color: $black;
+
+        }
+
+    }
+
+}
 
 
 

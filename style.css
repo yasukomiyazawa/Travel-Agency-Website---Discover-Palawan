@@ -496,6 +496,106 @@ section {
   color: #fff !important;
 }
 
+.reviews .slide .text {
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-style: italic;
+  background: #eee;
+  border-radius: 0.5rem;
+  color: #10221b;
+  line-height: 2;
+  position: relative;
+  z-index: 0;
+  margin: 3rem 0;
+}
+.reviews .slide .text::before {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0.7rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: #eee;
+  transform: rotate(45deg);
+}
+.reviews .slide .user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.reviews .slide .user .review-picture {
+  border: 0.2rem solid #10221b;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  padding: 2rem;
+  display: inline-block;
+  background: rgb(151, 30, 30);
+}
+.reviews .slide .user h3 {
+  font-size: 2rem;
+  color: rgb(0, 0, 77);
+}
+.reviews .slide .user .stars-review i {
+  color: rgb(242, 206, 0);
+  font-size: 1.5rem;
+}
+
+.blogs .slide {
+  text-align: center;
+  padding: 2rem;
+}
+.blogs .slide img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.blogs .slide .icons {
+  background: #10221b;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+  top: -2rem;
+  display: inline-block;
+}
+.blogs .slide .icons .date-writer {
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+.blogs .slide .icons .date-writer:hover {
+  color: rgb(242, 206, 0);
+}
+.blogs .slide .icons .date-writer i {
+  padding-right: 0.5rem;
+  color: rgb(242, 206, 0);
+}
+.blogs .slide .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+.blogs .slide .btn:hover {
+  background: rgb(151, 30, 30);
+  color: #fff !important;
+}
+.blogs .slide h3 {
+  font-size: 2rem;
+  color: #10221b;
+}
+.blogs .slide p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  line-height: 2;
+  color: #10221b;
+}
+
 @media (max-width: 1440px) {
   section {
     padding: 3rem 2rem;
