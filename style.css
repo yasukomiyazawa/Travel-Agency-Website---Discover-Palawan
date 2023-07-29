@@ -596,6 +596,51 @@ section {
   color: #10221b;
 }
 
+.newsletter {
+  background: #eee;
+}
+.newsletter .content {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+.newsletter .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #10221b;
+}
+.newsletter .content form {
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 5rem;
+  border: 0.2rem solid #10221b;
+  padding: 0.7rem;
+  display: flex;
+}
+.newsletter .content form .email {
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: #10221b;
+  padding: 0 1.3rem;
+}
+.newsletter .btn {
+  margin-top: 0;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  border-radius: 5rem;
+  color: #fff;
+  cursor: pointer;
+  background: #10221b;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+.newsletter .btn:hover {
+  background: none;
+  color: #10221b;
+}
+
 @media (max-width: 1440px) {
   section {
     padding: 3rem 2rem;
