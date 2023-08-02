@@ -141,6 +141,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     },
   });
+
+  var swiper = new Swiper(".partners-slider", {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 8,
+    breakpoints: {
+
+      0: {
+        slidesPerView: 1,
+      },
+
+      600: {
+        slidesPerView: 2,
+      },
+
+      1024: {
+        slidesPerView: 3,
+      },
+
+      1400: {
+        slidesPerView: 4,
+      },
+    },
+});
+  
+
 });
 
 

@@ -641,6 +641,14 @@ section {
   color: #10221b;
 }
 
+.partners .slide {
+  text-align: center;
+}
+.partners .slide img {
+  height: 12rem;
+  width: 200px;
+}
+
 @media (max-width: 1440px) {
   section {
     padding: 3rem 2rem;
