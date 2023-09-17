@@ -645,8 +645,55 @@ section {
   text-align: center;
 }
 .partners .slide img {
-  height: 12rem;
+  height: 8rem;
   width: 200px;
+}
+
+.footer {
+  background-color: black;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+.footer .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .box h3, .footer .box a, .footer .box i {
+  color: white;
+  cursor: pointer;
+}
+.footer .box h3:hover, .footer .box a:hover, .footer .box i:hover {
+  color: rgb(242, 206, 0);
+}
+.footer .box h3 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+}
+.footer .box a {
+  display: block;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+.footer .box i {
+  padding-right: 0.5rem;
+}
+.footer .box i:hover {
+  color: rgb(242, 206, 0);
+}
+.footer .credit {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+.footer .credit span {
+  color: rgb(242, 206, 0);
 }
 
 @media (max-width: 1440px) {
