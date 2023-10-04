@@ -16,7 +16,7 @@ Usage
    
 First, download the project files from the repository or clone the repository to your local machine using Git.
 
-  git clone https://github.com/your-username/discoverpalawan.git
+  git clonehttps://github.com/your-username/discoverpalawan.git
 
 2. Open the HTML File
    
