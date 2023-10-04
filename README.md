@@ -6,17 +6,17 @@ Discover Palawan is an immersive travel experience website crafted to showcase t
 
 **Table of Contents**
 
-Usage
-Features
-Contributing
-License
-Usage
+- Usage
+- Features
+- Contributing
+- License
+- Usage
 
 1. Download or Clone the Repository
    
 First, download the project files from the repository or clone the repository to your local machine using Git.
 
-  git clonehttps://github.com/your-username/discoverpalawan.git
+        git clone https://github.com/your-username/discoverpalawan.git
 
 2. Open the HTML File
    
